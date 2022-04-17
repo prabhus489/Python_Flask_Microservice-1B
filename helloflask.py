@@ -1,1 +1,1 @@
-from helloflaskapp import app
+from . import app

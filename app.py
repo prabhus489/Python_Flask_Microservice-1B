@@ -104,7 +104,13 @@ def sendin(db=connect()):
         cur.connection.commit()
         cur.close()
     return f"Marketing Feedback Registration Done!!" 
- 
+
+
+@app.route('/')
+@app.route('/index')
+def index():
+    return f"Welcome to this Microservice-1 Flask Application!, "
  
 
-app.run(host='localhost', port=5000) 
+#app.run(host='localhost', port=5000) 
+app.run(host='0.0.0.0', port=5000)
