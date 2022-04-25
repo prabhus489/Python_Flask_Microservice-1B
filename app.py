@@ -109,7 +109,7 @@ def sendin(db=connect()):
 @app.route('/')
 @app.route('/index')
 def index():
-    return f"Welcome to this Microservice-1 Flask Application!, "
+    return f"Welcome to this Microservice-2(1B) Flask Application!"
  
 
 
