@@ -113,4 +113,8 @@ def index():
  
 
 #app.run(host='localhost', port=5000) 
+<<<<<<< HEAD
 app.run(host='0.0.0.0', port=8008)
+=======
+app.run(host='0.0.0.0', port=8008)
+>>>>>>> 96e61d0197ae7b0d381a51a167d251aa705790e9
