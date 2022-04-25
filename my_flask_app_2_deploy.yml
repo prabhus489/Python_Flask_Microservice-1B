@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myflaskapp2-deploy
+  labels:
+    app: myflaskapp2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myflaskapp2
+  template:
+    metadata:
+      labels:
+        app: myflaskapp2
+    spec:
+      containers:
+      - name: myflaskapp2
+        image: prabhu12yuva/fsm-appx:myflaskapp2
+        ports:
+        - containerPort: 8008
